@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 20px;">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Layout</title>
+
+  <link rel="stylesheet" href="assets/normalize.css">
+
+  <style>
+
+    section {
+      width: 1000px;
+      height: 500px;
+      background-color: yellow;                     /*me colour eka watenna one right eke yatamane eth eka waten naththe wena kotuwakin e colour ekath allan inna hinda*/
+
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    section>div {
+      border: 1px solid green;                      /*meken eka eka kotuwa wate border layout ekak thiyenawa... */
+    }
+
+    section>div:first-child {
+      background-color: red;
+      grid-column: 1/3;                            /*meken kiyanne 1 column line eke idan 3 weni column line eka wenakam allanna kiyalai...*/
+    }
+    section>div:nth-child(2) {
+      background-color: green;
+    }
+    section>div:nth-child(3) {
+      background-color: red;
+      grid-column: 4/5;                        /*meken kiyanne 4 column line eke idan 5 weni column line eka wenakam allanna kiyalai...*/
+      grid-row: 1/4;                           /*meken kiyanne 1 row line eke idan 4 weni row line eka wenakam allanna kiyalai...*/
+    }
+    section>div:nth-child(4) {
+      background-color: purple;
+    }
+    section>div:nth-child(5) {
+      background-color: deeppink;
+    }
+    section>div:nth-child(6) {
+      background-color: blue;
+    }
+    section>div:nth-child(7) {
+      background-color: brown;
+    }
+    section>div:nth-child(8) {
+      background-color: darkblue;
+      grid-column: 2/4;                        /*meken kiyanne 2 column line eke idan 4 weni column line eka wenakam allanna kiyalai...*/
+    }
+    section>div:nth-child(9) {
+      background-color: yellow;                /*methanta mona colour eka dammath wadak na..udin me kotuwa wena colour ekakin allan inna hinda...*/
+    }
+    section>div:nth-child(10) {
+      background-color: rebeccapurple;         /*methanta mona colour eka dammath wadak na..udin me kotuwa wena colour ekakin allan inna hinda...*/
+    }
+    section>div:nth-child(11) {
+      background-color: dodgerblue;            /*methanta mona colour eka dammath wadak na..udin me kotuwa wena colour ekakin allan inna hinda...*/
+    }
+  </style>
+
+</head>
+<body>
+
+<section>
+
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <div></div>
+  <div></div>                <!-- muladi hadaddi div 12 k hadanawa eth methana dan div adu wela thiyenne udadi ekama colour ekain rows hari columns hari allaganna pramanaya anuwa ekin eka adu wewi yanawa..-->
+
+</section>
+
+</body>
+</html>
