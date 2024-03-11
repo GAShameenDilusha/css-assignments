@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 04</title>
+    <link rel="stylesheet" href="../assets/normalize.css">
+
+    <style>
+
+        .ch{
+            position: sticky;
+            top: 0;
+            z-index: 300;
+        }
+
+        section>div:first-child{
+            height: 70px;
+            color: white;
+        }
+
+        section>div:first-child>span{
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        section>div:nth-child(2){
+            height: calc(100vh - 50px);
+            position: relative;
+        }
+
+        section>div:nth-child(2)>span{
+            width: fit-content;
+            height: fit-content;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            font-size: 100px;
+        }
+        section:first-child>div:first-child{
+            background: red;
+        }
+        section:nth-child(2)>div:first-child{
+            background: darkblue;
+        }
+        section:nth-child(2)>div:nth-child(2){
+            background: lightskyblue;
+        }
+
+        section:nth-child(3)>div:first-child{
+            background: black;
+        }
+        section:nth-child(3)>div:nth-child(2){
+            background: gray;
+        }
+
+        section:nth-child(4)>div:first-child{
+            background: darkred;
+        }
+        section:nth-child(4)>div:nth-child(2){
+            background: #933c1e;
+        }
+    </style>
+
+
+</head>
+<body>
+<section>
+    <div class="ch"><span>Card 01</span></div> <!--card header-->
+    <div><span>HELLO</span></div> <!--card body-->
+</section>
+
+<section>
+    <div class="ch"><span>Card 02</span></div> <!--card header-->
+    <div><span>How</span></div> <!--card body-->
+</section>
+
+<section>
+    <div class="ch"><span>Card 03</span></div> <!--card header-->
+    <div><span>Are</span></div> <!--card body-->
+</section>
+
+<section>
+    <div class="ch"><span>Card 04</span></div> <!--card header-->
+    <div><span>You..?</span></div> <!--card body-->
+</section>
+</body>
+</html>
