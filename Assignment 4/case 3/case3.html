@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 20px;">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Animation</title>
+
+    <link rel="stylesheet" href="../assets/normalize.css">
+
+    <style>
+
+        :root{                            /*methanin wenas karama athi hama thanama after wenas wenawa....*/
+            --width: 100px;
+            --height: 50px
+        }
+
+        body{
+            overflow: hidden;
+        }
+
+        div {
+            width: 100px;
+            height: 50px;
+            border-radius: 8px;
+            background-color: mediumpurple;
+
+            animation-name: animi ;
+            animation-duration: 5s;
+            animation-iteration-count: infinite ;
+            animation-timing-function: linear;       /*nawathinnathuwa digatama yamata...*/
+            animation-direction: alternate;  /*meken apassatath wada karanawa..*/
+        }
+
+        @keyframes animi {
+            0% {
+                margin-left: 0;
+                margin-top: 0;
+            }
+
+            25% {
+                margin-left: calc(100vw - var(--width));
+                margin-top: 0;
+                background-color: red;
+                transform: rotate(180deg);
+            }
+
+            50%{
+                margin-left: calc(100vw - var(--width));
+                margin-top: calc(100vh - var(--height));
+                background-color: orangered;
+                transform: rotate(0deg);
+            }
+
+            75%{
+                margin-left: 0;
+                margin-top: calc(100vh - var(--height));
+                background-color: deeppink;
+                transform: rotate(-180deg);
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div></div>
+
+</body>
+
+</html>
